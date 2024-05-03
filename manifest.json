@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Vegamovies-Bypasser",
+  "version": "1.0.0",
+  "author": "Prince Kumar Vishwakarma",
+  "description": "It's a Vegamovies link Bypasser. It gives direct download links of movies and series from Vegamovies.",
+  "permissions": ["activeTab", "storage", "webNavigation", "tabs"],
+  "offline_enabled": false,
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "64": "icon.png"
+  },
+  "action":{
+      "default_title": "Vegamovies-Bypasser",
+      "default_popup": "popup.html"
+  },
+  "background": {
+    "serviceWorker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_start",
+      "include_globs": [
+        "*://unilinks.*/*",
+        "*://vegamovies.*/*"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "incognito": "split"
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegamovies-Bypasser</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: gray;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 40%;
+      background-color: #dadada;
+    }
+
+    body {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background-color: #111111;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+    }
+
+    h3 {
+      margin-top: 5px;
+      color: #F6ED14;
+    }
+
+    button {
+      background: linear-gradient(135deg, #2ea1cf, #ff19d0);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    #data-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    #data-container a {
+      background: linear-gradient(135deg, #ed0b0b, #f2d152);
+      color: white;
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 15px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      background-color: #333333;
+      font-family: monospace;
+      font-size: 0.8rem;
+      width: 100%;
+      padding: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3 id="hello">VegaMovies Bypasser</h3>
+  <button id="bypass">Bypass</button>
+  <div id="data-container"></div>
+  <footer>Made by Prince</footer>
+  <script src="./popup.js"></script>
+</body>
+
+</html>
